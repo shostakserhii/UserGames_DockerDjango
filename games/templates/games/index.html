@@ -1,0 +1,16 @@
+{% extends 'games/base.html' %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+
+<ul>
+    {% for game in games %}
+    <li>
+        <h2> {{game.name}} </h2>
+        <p> {{game.description}} </p>
+        <p> Price ${{game.price}} </p>
+        <hr>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title> User's Games </title>
+  </head>
+  <body>
+    <form method="POST">
+      {% csrf_token %}
+      <ul>
+        <p><a href="{% url 'home'%}"> Home </a></p>
+        <h3>Check user's games by email</h3>
+        <label for="email">E-mail:</label>
+        <input type="email" id="mail" name="email" required>
+        <input type="submit", value="Show">
+      </ul>
+    </form>
+  </body>
+</html>
+

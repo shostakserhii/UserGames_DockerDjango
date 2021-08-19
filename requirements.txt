@@ -1,0 +1,5 @@
+Django==3.2.4
+mysqlclient==1.4.6
+# mysql-connector-python
+# django-mysql
+gunicorn==20.1.0

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games</title>
+</head>
+<body>
+{% block content %}
+{% endblock content %}
+<ul>
+    <li> <a href="{% url 'add_user'%}"> Add User </a> </li>
+    <li> <a href="{% url 'user_games'%}"> Check User's games </a> </li>
+    <li> <a href="{% url 'delete_user'%}"> Delete User from DB </a> </li>
+</ul>
+</body>
+</html>

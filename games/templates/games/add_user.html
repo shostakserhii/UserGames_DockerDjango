@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Add User</title>
+  </head>
+  <body>
+    <form method="POST">
+      {% csrf_token %}
+      <ul>
+        <p><a href="{% url 'home'%}"> Home </a></p>
+        <h5>{{ top }}</h5>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </li>
+        <li>
+          <label for="surname">Surname:</label>
+          <input type="text" id="surname" name="surname" required>
+        </li>
+        <li>
+          <label for="email">E-mail:</label>
+          <input type="email" id="mail" name="email" required>
+        </li>
+        <li>
+          <label for="password">Password:</label>
+          <input id="password" autocomplete="off" type="password" name="password" required> 
+        </li>
+        <br />
+        <input type="submit", value="Add User">
+      </ul>
+    </form>
+  </body>
+</html>
+

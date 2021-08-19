@@ -1,0 +1,13 @@
+[Unit]
+Description=games
+After=network.service
+
+[Service]
+User=sshos
+Group=sshos
+WorkingDirectory=/home/sshos/Study/Task/Project
+EnvironmentFile=/home/sshos/Study/Task/Project/etc/games.env
+ExecStart=/home/sshos/.local/bin/gunicorn config.wsgi:application
+
+[Install]
+WantedBy=default.target
